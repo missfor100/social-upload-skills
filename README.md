@@ -33,6 +33,9 @@
    uv pip install -e .
    ```
 
+   > 建议**锁定上游版本**：安装前记录所用 commit（`git rev-parse HEAD > ../sau.pin`），
+   > 升级时显式比对上游 changelog，避免被静默变更的 CLI 契约或新引入的风险代码影响。
+
 3. **安装 patchright 浏览器**（Windows PowerShell）：
 
    ```powershell
@@ -97,6 +100,7 @@ sau douyin upload-note ...            # 发布图文
 - **本仓库不含任何账号密码、cookie、token、二维码或个人路径**；发布前已做两轮正则全量扫描（凭据字段 / 手机号 / 邮箱 / 盘符路径 / IP）加人工抽读，命中为 0
 - 登录生成的 cookie、二维码图片、虚拟环境等本地敏感产物已被 `.gitignore` 排除，不会进入提交历史
 - 请勿把本机 cookie 文件复制进仓库，公开仓库尤其注意
+- **登录二维码本身即登录态凭证**：经聊天通道发送给 agent 时会途经模型服务商，仅在信任该通道时使用；更稳妥的做法是让用户直接在本机打开二维码图片路径扫码
 
 ## 免责声明
 
