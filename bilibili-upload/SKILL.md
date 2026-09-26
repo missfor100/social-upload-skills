@@ -40,6 +40,7 @@ description: 当 agent 需要通过已安装的 `sau` CLI 完成 Bilibili 登录
 - 对 agent 来说，不要在非交互环境里硬跑 `sau bilibili login`
 - 正确做法是让用户自己在本地终端执行 `sau bilibili login --account <name>`
 - 如果终端里的二维码显示不完整，提醒用户直接打开当前目录下的 `qrcode.png` 扫码
+- 登录二维码即登录态凭证：让用户在本机打开图片扫码，不要把图片经聊天通道转发，也不要把二维码内容转述成文本
 
 ## 模板文件
 

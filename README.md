@@ -33,8 +33,9 @@
    uv pip install -e .
    ```
 
-   > 建议**锁定上游版本**：安装前记录所用 commit（`git rev-parse HEAD > ../sau.pin`），
-   > 升级时显式比对上游 changelog，避免被静默变更的 CLI 契约或新引入的风险代码影响。
+   > **必须锁定上游版本**：本仓库已用 [UPSTREAM.md](UPSTREAM.md) 记录验证过的上游 commit、
+   > 关键依赖版本与平台覆盖情况；升级前先读其中的「升级上游的固定流程」，
+   > 避免被静默变更的 CLI 契约或新引入的风险代码影响。
 
 3. **安装 patchright 浏览器**（Windows PowerShell）：
 
@@ -108,4 +109,4 @@ sau douyin upload-note ...            # 发布图文
 
 ## 更新记录
 
-见 [CHANGELOG.md](CHANGELOG.md)。
+见 [CHANGELOG.md](CHANGELOG.md)；上游版本锁定与平台覆盖见 [UPSTREAM.md](UPSTREAM.md)。

@@ -45,6 +45,7 @@ sau bilibili upload-video \
   --desc "<desc>" \
   --tid <category-id> \
   [--tags tag1,tag2] \
+  [--thumbnail <image-path>] \
   [--schedule "YYYY-MM-DD HH:MM"]
 ```
 
@@ -56,6 +57,7 @@ sau bilibili upload-video \
   - `--tid`
 - 可选参数：
   - `--tags`
+  - `--thumbnail`（封面图）
   - `--schedule`
 
 ## 额外说明
